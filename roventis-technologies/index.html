@@ -1,0 +1,1439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ROVENTIS TECHNOLOGIES — Modern Software Engineering, AI & Autonomous Systems</title>
+  <meta name="description" content="Roventis Technologies is an elite software engineering company based in India. We design and build high-performance web apps, mobile applications, AI solutions, and autonomous systems.">
+
+  <!-- Typography: Sora & Geist Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600;700&family=Sora:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-night">
+
+  <!-- Ambient Background Canvas: Faint Ruled-Notebook Lines & Film Grain -->
+  <div class="notebook-lines-overlay" aria-hidden="true"></div>
+  <div class="film-grain-overlay" aria-hidden="true"></div>
+
+  <!-- Header / Nav with Live Recording Clock that counts up as you scroll -->
+  <header class="site-header" id="siteHeader">
+    <div class="nav-container">
+      
+      <!-- Brand & Rec Indicator -->
+      <div class="nav-left">
+        <a href="#hero" class="brand-link" aria-label="Roventis Technologies Home">
+          <span class="brand-badge-symbol">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <polygon points="12 2 2 7 12 12 22 7 12 2" fill="rgba(23, 84, 238, 0.2)" stroke="#1754EE"/>
+              <polyline points="2 17 12 22 22 17" stroke="#6EF2C6"/>
+              <polyline points="2 12 12 17 22 12" stroke="#1754EE"/>
+            </svg>
+          </span>
+          <span class="brand-name">ROVENTIS<span class="brand-sub">.TECH</span></span>
+        </a>
+
+        <!-- Live Recording Clock: Counts up as you scroll -->
+        <div class="recording-clock" id="recordingClock" title="Session recording runtime (increases with scroll depth)">
+          <span class="rec-blip" aria-hidden="true"></span>
+          <span class="rec-label">REC</span>
+          <span class="rec-counter" id="recCounterDisplay">00:01:24</span>
+        </div>
+      </div>
+
+      <!-- Center Links -->
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="#hero" class="nav-anchor">Meeting Agenda</a>
+        <a href="#app-grid" class="nav-anchor">Live Engine</a>
+        <a href="#process" class="nav-anchor">Methodology</a>
+        <a href="#integrations" class="nav-anchor">Ecosystem</a>
+        <a href="#security" class="nav-anchor">Zero-Trust</a>
+        <a href="#pricing" class="nav-anchor">Scope & Quotes</a>
+        <a href="#faq" class="nav-anchor">FAQ</a>
+      </nav>
+
+      <!-- Right CTA -->
+      <div class="nav-right">
+        <a href="#contact" class="btn-primary-nav" id="btnNavStart">
+          <span class="btn-text">Start a Project</span>
+          <span class="btn-arrow">→</span>
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ========================================================================= -->
+    <!-- 1. HERO SECTION: MEETING CHAPTER 01 + LIVE TRANSCRIPT HEADLINE + 3D APP WINDOW -->
+    <!-- ========================================================================= -->
+    <section id="hero" class="section-hero">
+      <div class="container hero-container">
+        
+        <!-- Mono Timestamp Meeting Chapter -->
+        <div class="meeting-chapter-header">
+          <span class="chapter-badge">
+            <span class="chapter-dot"></span>
+            <span class="chapter-mono">[09:00:00 AM IST] // CHAPTER 01 — INITIAL ARCHITECTURE TRANSCRIPT</span>
+          </span>
+          <span class="meeting-attendees-pill">ATTENDEES: CLIENT LEAD + ROVENTIS PRINCIPAL ENGINEERS</span>
+        </div>
+
+        <div class="hero-split-grid">
+          
+          <!-- Left: Live Transcript Headline & Pitch -->
+          <div class="hero-headline-column">
+            
+            <h1 class="hero-live-headline" id="heroLiveHeadline" aria-label="We engineer high-performance software, custom web systems, and autonomous AI for ambitious businesses.">
+              <!-- Words injected and revealed word-by-word with blur-to-sharp animation -->
+              <span class="transcript-word" style="--w-idx: 0">We</span>
+              <span class="transcript-word" style="--w-idx: 1">engineer</span>
+              <span class="transcript-word" style="--w-idx: 2">high-performance</span>
+              <span class="transcript-word" style="--w-idx: 3">software,</span>
+              <span class="transcript-word" style="--w-idx: 4">custom</span>
+              <span class="transcript-word" style="--w-idx: 5">web</span>
+              <span class="transcript-word" style="--w-idx: 6">systems,</span>
+              <span class="transcript-word" style="--w-idx: 7">and</span>
+              <span class="transcript-word highlight-mint" style="--w-idx: 8">autonomous</span>
+              <span class="transcript-word highlight-mint" style="--w-idx: 9">AI</span>
+              <span class="transcript-word" style="--w-idx: 10">for</span>
+              <span class="transcript-word highlight-blue" style="--w-idx: 11">ambitious</span>
+              <span class="transcript-word highlight-blue" style="--w-idx: 12">enterprises.</span>
+              <span class="mint-cursor" aria-hidden="true">_</span>
+            </h1>
+
+            <p class="hero-subpitch">
+              From responsive e-commerce and native mobile apps to resilient cloud backends, payment gateways, and custom AI agents. 
+              Built in India with global engineering rigor. No boilerplate stubs. Production-grade software from day one.
+            </p>
+
+            <div class="hero-action-row">
+              <a href="#contact" class="btn-hero-primary">
+                <span>Book Initial Project Discussion</span>
+                <span class="btn-icon">⚡</span>
+              </a>
+              <a href="#app-grid" class="btn-hero-secondary">
+                <span>Inspect Working Systems</span>
+                <span class="btn-subtext">Scroll for 3D Demo ↓</span>
+              </a>
+            </div>
+
+            <!-- Mini Spec Sheet Strip -->
+            <div class="hero-specs-strip">
+              <div class="spec-cell">
+                <span class="spec-label">HEADQUARTERS</span>
+                <span class="spec-val">India · Global Delivery</span>
+              </div>
+              <div class="spec-cell">
+                <span class="spec-label">CORE DOMAINS</span>
+                <span class="spec-val">Web, Mobile, AI & Automation</span>
+              </div>
+              <div class="spec-cell">
+                <span class="spec-label">PRICING MODEL</span>
+                <span class="spec-val">Tailored Project Quotations</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right: Interactive Live Speaker Card -->
+          <div class="hero-speaker-card">
+            <div class="speaker-header">
+              <div class="speaker-avatar-wrap">
+                <div class="speaker-avatar">RV</div>
+                <div class="speaker-status-dot"></div>
+              </div>
+              <div class="speaker-info">
+                <div class="speaker-name">Roventis Architecture Engine</div>
+                <div class="speaker-role">SPEAKER 01 · SYSTEM RECORDING ACTIVE</div>
+              </div>
+              <span class="speaker-live-tag">LIVE SYNC</span>
+            </div>
+
+            <div class="speaker-quote-log">
+              <div class="log-entry">
+                <span class="log-time">09:00:12</span>
+                <p>“Client asks for full e-commerce migration, custom API middleware, and an autonomous AI support agent that reconciles orders directly with their ERP.”</p>
+              </div>
+              <div class="log-entry active-log">
+                <span class="log-time">09:00:34</span>
+                <p class="typing-text">“Proposed stack: Next.js + FastAPI + PostgreSQL on AWS, with Razorpay integration and fine-tuned agent workflows.”</p>
+              </div>
+            </div>
+
+            <div class="speaker-footer">
+              <span class="confidence-chip">Engine Confidence: 99.4%</span>
+              <span class="security-chip">Encrypted Stream · SHA-256</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- App Window that lies back in 3D perspective and sits up as you scroll -->
+        <div class="perspective-stage">
+          <div class="app-window-3d" id="heroAppWindow">
+            
+            <!-- Window Title Bar -->
+            <div class="window-titlebar">
+              <div class="window-traffic-lights">
+                <span class="traffic-light red"></span>
+                <span class="traffic-light yellow"></span>
+                <span class="traffic-light green"></span>
+              </div>
+              <div class="window-title-tab">
+                <span class="tab-icon">⌘</span>
+                <span class="tab-title">roventis-core-runtime — v3.4.0-prod [STAGE: ACTIVE_SESSION]</span>
+              </div>
+              <div class="window-latency-badge">
+                <span class="latency-dot"></span>
+                <span class="latency-text">18ms to Mumbai Edge</span>
+              </div>
+            </div>
+
+            <!-- Window Content Inside: Real-time System Dashboard Preview -->
+            <div class="window-viewport-grid">
+              
+              <!-- Left Sidebar Mini Menu -->
+              <div class="win-sidebar">
+                <div class="win-nav-group">
+                  <span class="win-group-title">SYSTEMS</span>
+                  <div class="win-nav-item active"><span class="icon">●</span> Active Cluster</div>
+                  <div class="win-nav-item"><span class="icon">❖</span> Web & Mobile Apps</div>
+                  <div class="win-nav-item"><span class="icon">⚡</span> AI Agents (4 Run)</div>
+                  <div class="win-nav-item"><span class="icon">💳</span> Payment Pipelines</div>
+                  <div class="win-nav-item"><span class="icon">🔒</span> Auth & Vault</div>
+                </div>
+                <div class="win-status-bottom">
+                  <span class="label">STATUS:</span>
+                  <span class="val-healthy">All Systems Go</span>
+                </div>
+              </div>
+
+              <!-- Main Stage Console -->
+              <div class="win-main-stage">
+                
+                <div class="win-top-metrics">
+                  <div class="win-metric-card">
+                    <span class="m-label">REQUEST THROUGHPUT</span>
+                    <span class="m-val">48,210 <small>req/min</small></span>
+                    <span class="m-sub text-mint">+12.4% peak burst</span>
+                  </div>
+                  <div class="win-metric-card">
+                    <span class="m-label">MEDIAN LATENCY</span>
+                    <span class="m-val">34 <small>ms</small></span>
+                    <span class="m-sub text-mint">P99 @ 82ms</span>
+                  </div>
+                  <div class="win-metric-card">
+                    <span class="m-label">ACTIVE INTEGRATIONS</span>
+                    <span class="m-val">18 <small>services</small></span>
+                    <span class="m-sub text-blue">PostgreSQL, Stripe, AWS</span>
+                  </div>
+                  <div class="win-metric-card">
+                    <span class="m-label">AI AGENT QUEUE</span>
+                    <span class="m-val">0 <small>backlog</small></span>
+                    <span class="m-sub text-mint">Real-time sync</span>
+                  </div>
+                </div>
+
+                <!-- Code & Event Stream -->
+                <div class="win-stream-terminal">
+                  <div class="term-line"><span class="term-t">09:01:02.144</span> <span class="term-src">[AUTH_SERVICE]</span> <span class="term-ok">JWT Session validated</span> client_id="in_mumbai_992"</div>
+                  <div class="term-line"><span class="term-t">09:01:03.002</span> <span class="term-src">[PAYMENT_GATEWAY]</span> <span class="term-ok">Webhook ACK</span> Razorpay capture verified (signature match)</div>
+                  <div class="term-line"><span class="term-t">09:01:03.890</span> <span class="term-src">[AI_AGENT_WORKER]</span> <span class="term-proc">Autonomous query parsed:</span> "Summarize quarterly cross-border sales and dispatch report"</div>
+                  <div class="term-line"><span class="term-t">09:01:04.215</span> <span class="term-src">[DB_POSTGRES]</span> <span class="term-ok">Query executed</span> duration=2.1ms rows=844 pool_status=optimal</div>
+                  <div class="term-line highlight-term"><span class="term-t">09:01:04.760</span> <span class="term-src">[DISPATCH]</span> <span class="term-mint">✔ Automated email summary sent to client executive team.</span></div>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- 2. GRID OF LIVE WORKING APP PIECES (SIGNATURE MOVE) -->
+    <!-- ========================================================================= -->
+    <section id="app-grid" class="section-app-grid">
+      <div class="container">
+        
+        <div class="section-header-block">
+          <div class="chapter-badge">
+            <span class="chapter-dot"></span>
+            <span class="chapter-mono">[09:05:00 AM IST] // CHAPTER 02 — THE LIVE APPLICATION ENGINE</span>
+          </div>
+          <h2 class="section-title">Software That Demonstrates Itself</h2>
+          <p class="section-desc">
+            No static mockups or fabricated promises. Explore four live systems running in parallel: 
+            streaming transcripts, autonomous task completion, conversational AI with timestamp navigation, and infrastructure telemetry.
+          </p>
+        </div>
+
+        <!-- The Interactive Spotlight Grid -->
+        <div class="spotlight-interactive-grid" id="spotlightGrid">
+          
+          <!-- Spotlight soft light element that tracks cursor -->
+          <div class="spotlight-glow" id="spotlightGlow" aria-hidden="true"></div>
+
+          <!-- TILE 1: Working Live Transcript Stream -->
+          <div class="app-tile tilt-card" data-tilt>
+            <div class="tile-header">
+              <div class="tile-title-group">
+                <span class="tile-indicator blip-mint"></span>
+                <h3 class="tile-title">Live Transcript Engine</h3>
+              </div>
+              <span class="tile-badge mono">STREAM_01</span>
+            </div>
+            <p class="tile-lead">Continuous speech-to-text tokenization with automatic speaker diarization and semantic tagging.</p>
+            
+            <div class="tile-viewport transcript-viewport" id="tileTranscriptBox">
+              <div class="transcript-stream-list" id="transcriptStreamList">
+                <div class="trans-item">
+                  <span class="spk">ENG_LEAD [09:05:10]:</span>
+                  <span class="txt">Connecting the custom Shopify Plus frontend to our headless FastAPI cluster...</span>
+                </div>
+                <div class="trans-item">
+                  <span class="spk">CLIENT [09:05:14]:</span>
+                  <span class="txt">We need sub-100 millisecond response times on mobile devices across 4G networks in India.</span>
+                </div>
+                <div class="trans-item">
+                  <span class="spk">ROVENTIS_BOT [09:05:18]:</span>
+                  <span class="txt">Edge-caching layer enabled via Cloudflare Workers. Cold start latency reduced to 14ms.</span>
+                </div>
+                <!-- Dynamic incoming items append here via app.js -->
+              </div>
+              <div class="trans-fade-mask"></div>
+            </div>
+
+            <div class="tile-footer">
+              <span class="tile-stat"><span class="text-mint">●</span> Audio Sync: Active</span>
+              <span class="tile-action-link">Inspect Protocol →</span>
+            </div>
+          </div>
+
+          <!-- TILE 2: Autonomous Summary & Action Items That Tick Off -->
+          <div class="app-tile tilt-card" data-tilt>
+            <div class="tile-header">
+              <div class="tile-title-group">
+                <span class="tile-indicator blip-blue"></span>
+                <h3 class="tile-title">Autonomous Action Items</h3>
+              </div>
+              <span class="tile-badge mono">AUTON_AGENT</span>
+            </div>
+            <p class="tile-lead">The AI model reads the meeting stream, extracts architectural milestones, and marks tasks complete.</p>
+
+            <div class="tile-viewport summary-viewport">
+              <div class="summary-typewriter-box">
+                <span class="summary-label">LIVE EXECUTIVE SUMMARY:</span>
+                <p class="summary-typed-text" id="summaryTypedText">
+                  Architecture approved for cross-platform iOS & Android launch. Payment gateway webhooks securely hardened.
+                </p>
+              </div>
+
+              <div class="checklist-interactive" id="checklistInteractive">
+                <div class="check-item completed" data-task="1">
+                  <span class="check-box">✔</span>
+                  <span class="task-name">Configure SSL & OAuth 2.0 Identity Server</span>
+                  <span class="task-status">DONE</span>
+                </div>
+                <div class="check-item completed" data-task="2">
+                  <span class="check-box">✔</span>
+                  <span class="task-name">Integrate Stripe & Razorpay Multi-Currency</span>
+                  <span class="task-status">DONE</span>
+                </div>
+                <div class="check-item active-anim" data-task="3" id="taskItem3">
+                  <span class="check-box" id="taskBox3">⏳</span>
+                  <span class="task-name">Deploy Docker Containers to AWS ECS</span>
+                  <span class="task-status status-prog" id="taskStatus3">BUILDING</span>
+                </div>
+                <div class="check-item" data-task="4" id="taskItem4">
+                  <span class="check-box" id="taskBox4">○</span>
+                  <span class="task-name">Run Automated Security & Pen-Testing Scans</span>
+                  <span class="task-status" id="taskStatus4">PENDING</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="tile-footer">
+              <span class="tile-stat"><span class="text-mint" id="actionItemsCount">2 of 4</span> tasks verified</span>
+              <button type="button" class="btn-tile-trigger" id="btnTriggerTaskCycle">Re-run Pipeline</button>
+            </div>
+          </div>
+
+          <!-- TILE 3: Interactive Question with Clickable Timestamp Links -->
+          <div class="app-tile tilt-card" data-tilt>
+            <div class="tile-header">
+              <div class="tile-title-group">
+                <span class="tile-indicator blip-violet"></span>
+                <h3 class="tile-title">AI Query & Timestamp Nav</h3>
+              </div>
+              <span class="tile-badge mono">LLM_QUERY</span>
+            </div>
+            <p class="tile-lead">Ask technical queries across the project history. The engine returns grounded answers with exact time anchors.</p>
+
+            <div class="tile-viewport query-viewport">
+              <div class="sample-query-box">
+                <span class="query-prompt-icon">?</span>
+                <span class="query-prompt-text">“How are database migrations and rollbacks handled?”</span>
+              </div>
+
+              <div class="ai-response-card" id="aiResponseCard">
+                <div class="resp-header">
+                  <span class="resp-badge">ROVENTIS_AGENT_V2</span>
+                  <span class="resp-time">Generated in 180ms</span>
+                </div>
+                <p class="resp-body">
+                  Zero-downtime blue/green schema migrations are triggered through Prisma and Alembic at 
+                  <button type="button" class="timestamp-link" data-seek="09:02:15" title="Jump to meeting chapter">[09:02:15]</button>. 
+                  Every release is backed by an automated point-in-time recovery snapshot documented at 
+                  <button type="button" class="timestamp-link" data-seek="09:03:40" title="Jump to meeting chapter">[09:03:40]</button>.
+                </p>
+                <div class="resp-feedback-line" id="respSeekAlert" hidden>
+                  ✦ Seeking recording playback to marker: <strong>09:02:15</strong>
+                </div>
+              </div>
+            </div>
+
+            <div class="tile-footer">
+              <span class="tile-stat">Indexed across 42 sessions</span>
+              <span class="tile-action-link">Try Sample Queries →</span>
+            </div>
+          </div>
+
+          <!-- TILE 4: System Architecture & Telemetry Pipeline -->
+          <div class="app-tile tilt-card" data-tilt>
+            <div class="tile-header">
+              <div class="tile-title-group">
+                <span class="tile-indicator blip-blue"></span>
+                <h3 class="tile-title">Production Telemetry</h3>
+              </div>
+              <span class="tile-badge mono">TELEMETRY</span>
+            </div>
+            <p class="tile-lead">Continuous health checks, automated error budgets, and latency monitoring across all client deployments.</p>
+
+            <div class="tile-viewport telemetry-viewport">
+              <div class="telemetry-node-row">
+                <div class="node-meta">
+                  <span class="node-icon">🌐</span>
+                  <span class="node-name">Web & API Cluster</span>
+                </div>
+                <div class="node-bar-wrap">
+                  <div class="node-bar" style="width: 98%;"></div>
+                </div>
+                <span class="node-val">99.99%</span>
+              </div>
+
+              <div class="telemetry-node-row">
+                <div class="node-meta">
+                  <span class="node-icon">📱</span>
+                  <span class="node-name">iOS & Android Sync</span>
+                </div>
+                <div class="node-bar-wrap">
+                  <div class="node-bar" style="width: 100%;"></div>
+                </div>
+                <span class="node-val">100%</span>
+              </div>
+
+              <div class="telemetry-node-row">
+                <div class="node-meta">
+                  <span class="node-icon">💳</span>
+                  <span class="node-name">Payment Webhooks</span>
+                </div>
+                <div class="node-bar-wrap">
+                  <div class="node-bar" style="width: 99.8%;"></div>
+                </div>
+                <span class="node-val">99.8%</span>
+              </div>
+
+              <div class="telemetry-node-row">
+                <div class="node-meta">
+                  <span class="node-icon">🤖</span>
+                  <span class="node-name">AI Autonomous Daemon</span>
+                </div>
+                <div class="node-bar-wrap">
+                  <div class="node-bar mint-bar" style="width: 96%;"></div>
+                </div>
+                <span class="node-val text-mint">0 Errors</span>
+              </div>
+            </div>
+
+            <div class="tile-footer">
+              <span class="tile-stat"><span class="text-mint">●</span> Distributed Edge Active</span>
+              <span class="tile-action-link">View Topology →</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- 3. HOW IT WORKS: 3 STEPS BESIDE A PINNED SCREEN THAT CHANGES PER STEP -->
+    <!-- ========================================================================= -->
+    <section id="process" class="section-process">
+      <div class="container">
+        
+        <div class="section-header-block">
+          <div class="chapter-badge">
+            <span class="chapter-dot"></span>
+            <span class="chapter-mono">[09:12:00 AM IST] // CHAPTER 03 — ENGINEERING LIFECYCLE</span>
+          </div>
+          <h2 class="section-title">From Initial Idea to Bulletproof Scale</h2>
+          <p class="section-desc">
+            A transparent, milestone-driven protocol. As you progress through each stage, our engineering cockpit adapts to show the active deliverable.
+          </p>
+        </div>
+
+        <div class="process-interactive-layout">
+          
+          <!-- Left Column: The 3 How-It-Works Steps -->
+          <div class="steps-flow-column">
+            
+            <!-- Step 1 -->
+            <div class="process-step-item active-step" data-step="1">
+              <div class="step-marker">
+                <span class="step-num">01</span>
+                <span class="step-line"></span>
+              </div>
+              <div class="step-body">
+                <span class="step-phase-tag">DISCOVERY & BLUEPRINT</span>
+                <h3 class="step-headline">Deep Scope, Wireframes & System Architecture</h3>
+                <p class="step-text">
+                  We translate your business objectives into a detailed architectural blueprint. We define database schemas, third-party API contracts, responsive Figma wireframes, security boundaries, and milestone timelines.
+                </p>
+                <div class="step-deliverables-list">
+                  <span>✦ Architecture Diagram</span>
+                  <span>✦ API Contract Specs</span>
+                  <span>✦ Interactive Wireframes</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="process-step-item" data-step="2">
+              <div class="step-marker">
+                <span class="step-num">02</span>
+                <span class="step-line"></span>
+              </div>
+              <div class="step-body">
+                <span class="step-phase-tag">FULL-STACK SYNTHESIS</span>
+                <h3 class="step-headline">High-Velocity Engineering, AI & Automation</h3>
+                <p class="step-text">
+                  Our engineers write clean, maintainable, modular code. We implement custom web apps, mobile apps, payment gateways, admin portals, and AI workflows with continuous integration tests and preview deployments.
+                </p>
+                <div class="step-deliverables-list">
+                  <span>✦ Clean Modular Codebase</span>
+                  <span>✦ Stripe & Razorpay Pipelines</span>
+                  <span>✦ AI Chatbots & Automation</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="process-step-item" data-step="3">
+              <div class="step-marker">
+                <span class="step-num">03</span>
+                <span class="step-line"></span>
+              </div>
+              <div class="step-body">
+                <span class="step-phase-tag">VERIFICATION & DEPLOYMENT</span>
+                <h3 class="step-headline">Security Audits, Zero-Downtime Launch & Care</h3>
+                <p class="step-text">
+                  We harden your platform against vulnerabilities, configure DNS, CDN edge caching, SSL, and automated cloud backups. Post-launch, we provide ongoing monitoring, telemetry alerts, and rapid feature iteration.
+                </p>
+                <div class="step-deliverables-list">
+                  <span>✦ Automated CI/CD Pipelines</span>
+                  <span>✦ Penetration & Security Tests</span>
+                  <span>✦ 24/7 Monitoring Handover</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right Column: Pinned Screen that Changes Per Step -->
+          <div class="pinned-screen-column">
+            <div class="sticky-screen-wrapper">
+              <div class="cockpit-screen-card" id="cockpitScreenCard">
+                
+                <div class="screen-top-bar">
+                  <div class="screen-dots">
+                    <span></span><span></span><span></span>
+                  </div>
+                  <div class="screen-title-label" id="cockpitScreenTitle">
+                    STAGE 01 // ARCHITECTURAL SCHEMATIC
+                  </div>
+                  <span class="screen-live-chip">LIVE VIEW</span>
+                </div>
+
+                <!-- DYNAMIC COCKPIT VIEWS (Swaps per active step) -->
+                <div class="cockpit-content-stage">
+                  
+                  <!-- VIEW 1: Architecture Blueprint (Step 1) -->
+                  <div class="cockpit-view active" id="cockpitView1">
+                    <div class="blueprint-diagram">
+                      <div class="blueprint-box client-box">
+                        <span class="box-tag">FRONTEND CLIENTS</span>
+                        <div class="box-content">Web Next.js · iOS Swift · Android Kotlin</div>
+                      </div>
+                      <div class="diagram-arrow">↓ HTTPS / GraphQL / WebSocket ↓</div>
+                      <div class="blueprint-box gateway-box">
+                        <span class="box-tag">API GATEWAY & AUTH</span>
+                        <div class="box-content">OAuth 2.0 · Rate Limiter · Cloudflare WAF</div>
+                      </div>
+                      <div class="diagram-arrow">↓ Service Mesh ↓</div>
+                      <div class="blueprint-grid-split">
+                        <div class="blueprint-box mini-box">
+                          <span class="box-tag">BUSINESS CORE</span>
+                          <div>FastAPI & Node Workers</div>
+                        </div>
+                        <div class="blueprint-box mini-box">
+                          <span class="box-tag">AI ENGINE</span>
+                          <div>LangChain & Custom Agents</div>
+                        </div>
+                      </div>
+                      <div class="diagram-arrow">↓ ACID Storage ↓</div>
+                      <div class="blueprint-box db-box">
+                        <span class="box-tag">PERSISTENCE LAYER</span>
+                        <div>PostgreSQL Cluster + Redis Cache + S3 Vault</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- VIEW 2: Engineering Code & Build Pipeline (Step 2) -->
+                  <div class="cockpit-view" id="cockpitView2">
+                    <div class="code-terminal-card">
+                      <div class="code-line"><span class="code-cmt">// Step 02: Initializing autonomous payment hook</span></div>
+                      <div class="code-line"><span class="code-kw">import</span> { createPaymentGateway } <span class="code-kw">from</span> <span class="code-str">"@roventis/core-pay"</span>;</div>
+                      <div class="code-line"><span class="code-kw">import</span> { AgentOrchestrator } <span class="code-kw">from</span> <span class="code-str">"@roventis/ai-agent"</span>;</div>
+                      <div class="code-line">&nbsp;</div>
+                      <div class="code-line"><span class="code-kw">export const</span> <span class="code-fn">handleOrderCapture</span> = <span class="code-kw">async</span> (orderId) => {</div>
+                      <div class="code-line indent"><span class="code-kw">const</span> verified = <span class="code-kw">await</span> gateway.verifyWebhookSignature();</div>
+                      <div class="code-line indent"><span class="code-kw">if</span> (verified) {</div>
+                      <div class="code-line indent-2"><span class="code-kw">await</span> agent.dispatchFulfillment({ orderId });</div>
+                      <div class="code-line indent-2"><span class="code-ret">return</span> { status: <span class="code-str">"SUCCESS_COMMITTED"</span>, ms: 24 };</div>
+                      <div class="code-line indent">}</div>
+                      <div class="code-line">};</div>
+                    </div>
+                    <div class="build-progress-bar">
+                      <div class="build-fill" style="width: 86%;"></div>
+                    </div>
+                    <div class="build-status-text">
+                      <span class="text-mint">✔ 184 unit tests passing</span> · <span>0 regressions</span>
+                    </div>
+                  </div>
+
+                  <!-- VIEW 3: Deployment & Security Cockpit (Step 3) -->
+                  <div class="cockpit-view" id="cockpitView3">
+                    <div class="deploy-cockpit-grid">
+                      <div class="deploy-card">
+                        <span class="d-label">GLOBAL EDGE REGION</span>
+                        <span class="d-val text-mint">Active · 240 PoPs</span>
+                        <span class="d-sub">Cloudflare Zero-Trust WAF</span>
+                      </div>
+                      <div class="deploy-card">
+                        <span class="d-label">SSL & CERTIFICATES</span>
+                        <span class="d-val text-mint">TLS 1.3 Strict</span>
+                        <span class="d-sub">Auto-renewing 4096-bit</span>
+                      </div>
+                      <div class="deploy-card">
+                        <span class="d-label">DATABASE CLUSTERS</span>
+                        <span class="d-val text-blue">Primary + 2 Read Replicas</span>
+                        <span class="d-sub">Automatic failover in &lt;3s</span>
+                      </div>
+                      <div class="deploy-card">
+                        <span class="d-label">DISASTER RECOVERY</span>
+                        <span class="d-val text-mint">RPO: 1m · RTO: 5m</span>
+                        <span class="d-sub">Encrypted hourly snapshots</span>
+                      </div>
+                    </div>
+                    <div class="live-deployment-stamp">
+                      <span>STATUS: PRODUCTION VERIFIED & LIVE</span>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="cockpit-footer-bar">
+                  <span class="foot-crumb" id="cockpitFooterText">Displaying Step 01 Architecture Mapping</span>
+                  <span class="foot-lock">🔒 ISO-Aligned Architecture</span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- 4. BIG CUSTOMER QUOTE WITH FOUR COUNTING STATS -->
+    <!-- ========================================================================= -->
+    <section id="proof" class="section-proof">
+      <div class="container">
+        
+        <div class="proof-quote-wrapper">
+          <div class="quote-symbol" aria-hidden="true">“</div>
+          <blockquote class="customer-quote-text">
+            [CLIENT TESTIMONIAL: “Roventis Technologies engineered our entire multi-tenant enterprise platform from scratch. Their ability to translate complex business workflows into blazing-fast web interfaces and autonomous AI pipelines is world-class. No bloat, no delays—just pure engineering excellence.”]
+          </blockquote>
+          
+          <div class="quote-author-block">
+            <div class="author-avatar">CT</div>
+            <div class="author-details">
+              <div class="author-name">[CLIENT REPRESENTATIVE: Chief Technology Officer]</div>
+              <div class="author-title">[GLOBAL LOGISTICS & SUPPLY CHAIN ENTERPRISE]</div>
+            </div>
+            <div class="verification-badge">
+              <span class="badge-icon">✓</span>
+              <span>[VERIFIED ENTERPRISE PROJECT ENGAGEMENT]</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Four Counting Stats -->
+        <div class="stats-counter-grid" id="statsCounterGrid">
+          
+          <div class="stat-counter-card">
+            <div class="stat-number-row">
+              <span class="counter-val" data-target="99.98" data-decimals="2">0.00</span>
+              <span class="stat-unit">%</span>
+            </div>
+            <span class="stat-title">PRODUCTION UPTIME SLA</span>
+            <p class="stat-desc">High-availability architecture backed by distributed failover clusters and edge redundancy.</p>
+          </div>
+
+          <div class="stat-counter-card">
+            <div class="stat-number-row">
+              <span class="counter-val" data-target="120" data-decimals="0">0</span>
+              <span class="stat-unit">ms</span>
+            </div>
+            <span class="stat-title">MEDIAN API LATENCY</span>
+            <p class="stat-desc">Ultra-responsive query pipelines optimized through indexing, Redis caching, and edge routing.</p>
+          </div>
+
+          <div class="stat-counter-card">
+            <div class="stat-number-row">
+              <span class="counter-val" data-target="100" data-decimals="0">0</span>
+              <span class="stat-unit">%</span>
+            </div>
+            <span class="stat-title">CODE TEST COVERAGE</span>
+            <p class="stat-desc">Strict CI/CD automated test harnesses validating end-to-end integration and security bounds.</p>
+          </div>
+
+          <div class="stat-counter-card">
+            <div class="stat-number-row">
+              <span class="counter-val" data-target="24" data-decimals="0">0</span>
+              <span class="stat-unit">/7</span>
+            </div>
+            <span class="stat-title">AUTONOMOUS MONITORING</span>
+            <p class="stat-desc">Continuous telemetry with automated alerts and self-healing worker pools.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- 5. INTEGRATIONS AS ONE GIANT SENTENCE OF TOOL NAMES -->
+    <!-- ========================================================================= -->
+    <section id="integrations" class="section-integrations">
+      <div class="container">
+        
+        <div class="section-header-block">
+          <div class="chapter-badge">
+            <span class="chapter-dot"></span>
+            <span class="chapter-mono">[09:20:00 AM IST] // CHAPTER 04 — INTEGRATIONS & ECOSYSTEM</span>
+          </div>
+          <h2 class="section-title">Composed Seamlessly Across Modern Technology Stacks</h2>
+          <p class="section-desc">
+            We do not lock you into proprietary silos. Every system we build composes directly with the tools, payment rails, and cloud platforms your business already trusts.
+          </p>
+        </div>
+
+        <!-- One Giant Interactive Sentence of Tool Names -->
+        <div class="giant-sentence-card">
+          <p class="giant-integrations-sentence">
+            Our engineering team designs, deploys, and orchestrates systems that connect seamlessly with
+            <span class="tool-pill" data-cat="payment">Stripe</span>,
+            <span class="tool-pill" data-cat="payment">Razorpay</span>,
+            <span class="tool-pill" data-cat="payment">PayPal</span>,
+            and
+            <span class="tool-pill" data-cat="payment">Custom Payment Gateways</span>,
+            streaming transactional notifications via
+            <span class="tool-pill" data-cat="comm">SendGrid</span>,
+            <span class="tool-pill" data-cat="comm">Resend</span>,
+            <span class="tool-pill" data-cat="comm">Twilio</span>,
+            and
+            <span class="tool-pill" data-cat="comm">Postmark</span>,
+            anchored in robust ACID storage on
+            <span class="tool-pill" data-cat="db">PostgreSQL</span>,
+            <span class="tool-pill" data-cat="db">MongoDB</span>,
+            <span class="tool-pill" data-cat="db">Redis In-Memory</span>,
+            and
+            <span class="tool-pill" data-cat="db">Supabase</span>,
+            containerized using
+            <span class="tool-pill" data-cat="cloud">Docker</span>
+            and
+            <span class="tool-pill" data-cat="cloud">Kubernetes</span>
+            across
+            <span class="tool-pill" data-cat="cloud">Amazon Web Services (AWS)</span>,
+            <span class="tool-pill" data-cat="cloud">Google Cloud Platform</span>,
+            <span class="tool-pill" data-cat="cloud">Cloudflare Workers</span>,
+            and
+            <span class="tool-pill" data-cat="cloud">DigitalOcean</span>,
+            supercharged by cutting-edge neural models from
+            <span class="tool-pill" data-cat="ai">OpenAI GPT-4o</span>,
+            <span class="tool-pill" data-cat="ai">Anthropic Claude 3.5</span>,
+            <span class="tool-pill" data-cat="ai">Meta Llama</span>,
+            and
+            <span class="tool-pill" data-cat="ai">DeepSeek</span>,
+            while powering autonomous operational flows through
+            <span class="tool-pill" data-cat="auto">n8n</span>,
+            <span class="tool-pill" data-cat="auto">Make</span>,
+            and
+            <span class="tool-pill" data-cat="auto">Python Async Workers</span>,
+            rendered through modern interfaces built with
+            <span class="tool-pill" data-cat="frontend">Next.js & React</span>,
+            <span class="tool-pill" data-cat="frontend">TypeScript</span>,
+            <span class="tool-pill" data-cat="frontend">Tailwind CSS</span>,
+            <span class="tool-pill" data-cat="mobile">Flutter</span>,
+            <span class="tool-pill" data-cat="mobile">React Native</span>,
+            <span class="tool-pill" data-cat="mobile">Swift (iOS)</span>,
+            and
+            <span class="tool-pill" data-cat="mobile">Kotlin (Android)</span>.
+          </p>
+
+          <div class="giant-sentence-footer">
+            <div class="legend-pills">
+              <span class="leg-item"><span class="leg-dot pay"></span> Payments & Billing</span>
+              <span class="leg-item"><span class="leg-dot cloud"></span> Cloud & Containers</span>
+              <span class="leg-item"><span class="leg-dot ai"></span> AI & Autonomous Models</span>
+              <span class="leg-item"><span class="leg-dot db"></span> Databases & Cache</span>
+              <span class="leg-item"><span class="leg-dot front"></span> Web & Mobile</span>
+            </div>
+            <div class="legend-note">
+              Hover any tool name to illuminate its architectural domain.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- 6. PRIVACY PROMISES BESIDE A LIVE REDACTION EXAMPLE -->
+    <!-- ========================================================================= -->
+    <section id="security" class="section-security">
+      <div class="container">
+        
+        <div class="section-header-block">
+          <div class="chapter-badge">
+            <span class="chapter-dot"></span>
+            <span class="chapter-mono">[09:28:00 AM IST] // CHAPTER 05 — ZERO-TRUST PRIVACY & INTELLECTUAL PROPERTY</span>
+          </div>
+          <h2 class="section-title">Strict Confidentiality & Uncompromised Security</h2>
+          <p class="section-desc">
+            Your proprietary business logic, customer database, and intellectual property remain 100% yours. 
+            We operate under ironclad non-disclosure, isolated developer sandboxes, and zero unauthorized telemetry.
+          </p>
+        </div>
+
+        <div class="security-split-grid">
+          
+          <!-- Numbered Privacy Promises List -->
+          <div class="security-promises-list">
+            
+            <div class="promise-item">
+              <div class="promise-num">01</div>
+              <div class="promise-content">
+                <h3 class="promise-title">Complete 100% Intellectual Property Handover</h3>
+                <p class="promise-desc">
+                  Every repository, commit history, deployment credential, and architectural design asset belongs exclusively to you upon milestone delivery. No vendor lock-in.
+                </p>
+              </div>
+            </div>
+
+            <div class="promise-item">
+              <div class="promise-num">02</div>
+              <div class="promise-content">
+                <h3 class="promise-title">Ironclad Bilateral Non-Disclosure Agreement (NDA)</h3>
+                <p class="promise-desc">
+                  We sign legally binding NDAs prior to the very first discovery call. Your trade secrets, market plans, and business models are protected at all times.
+                </p>
+              </div>
+            </div>
+
+            <div class="promise-item">
+              <div class="promise-num">03</div>
+              <div class="promise-content">
+                <h3 class="promise-title">Zero Unauthorized AI Training or Data Leaks</h3>
+                <p class="promise-desc">
+                  Your codebase and proprietary data are never fed back into public LLM training corpuses. We use enterprise zero-retention API endpoints exclusively.
+                </p>
+              </div>
+            </div>
+
+            <div class="promise-item">
+              <div class="promise-num">04</div>
+              <div class="promise-content">
+                <h3 class="promise-title">Isolated VPC & End-to-End Vault Encryption</h3>
+                <p class="promise-desc">
+                  Sensitive credentials, cryptographic keys, and database connections are stored in hardened vaults (AWS Secrets Manager / Vault) with strict least-privilege RBAC.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Live Interactive Redaction Example Card -->
+          <div class="redaction-demo-card">
+            <div class="redaction-header">
+              <div class="redaction-title-group">
+                <span class="shield-icon">🛡️</span>
+                <span class="redaction-heading">Live Data Redaction & Sanitization Sandbox</span>
+              </div>
+              <button type="button" class="btn-toggle-redact" id="btnToggleRedact" aria-label="Toggle redaction display">
+                <span id="redactBtnText">Reveal Sensitive Strings</span>
+                <span class="redact-icon">👁️</span>
+              </button>
+            </div>
+
+            <p class="redaction-intro">
+              Our automated sanitizer strips client PII, access tokens, and banking strings before any log or telemetry frame leaves the secure perimeter:
+            </p>
+
+            <div class="sanitizer-code-box" id="sanitizerCodeBox">
+              <div class="code-row">
+                <span class="row-num">01</span>
+                <span class="row-code"><span class="token-kw">const</span> clientSession = {</span>
+              </div>
+              <div class="code-row">
+                <span class="row-num">02</span>
+                <span class="row-code">&nbsp;&nbsp;companyName: <span class="token-str">"Acme Global Logistics"</span>,</span>
+              </div>
+              <div class="code-row">
+                <span class="row-num">03</span>
+                <span class="row-code">&nbsp;&nbsp;apiKey: <span class="redacted-str" data-real="sk_live_9942a8b9f01e23cd4881">[REDACTED_API_KEY]</span>,</span>
+              </div>
+              <div class="code-row">
+                <span class="row-num">04</span>
+                <span class="row-code">&nbsp;&nbsp;customerTaxId: <span class="redacted-str" data-real="GSTIN_27AAAAA0000A1Z5">[REDACTED_TAX_IDENTIFIER]</span>,</span>
+              </div>
+              <div class="code-row">
+                <span class="row-num">05</span>
+                <span class="row-code">&nbsp;&nbsp;payoutAccount: <span class="redacted-str" data-real="IBAN_IN99_HDFC_00049219482">[REDACTED_BANK_ACCOUNT]</span>,</span>
+              </div>
+              <div class="code-row">
+                <span class="row-num">06</span>
+                <span class="row-code">&nbsp;&nbsp;dbConnectionString: <span class="redacted-str" data-real="postgresql://admin:super_secret_pw@db.cluster.internal:5432/core">[REDACTED_CONNECTION_URI]</span>,</span>
+              </div>
+              <div class="code-row">
+                <span class="row-num">07</span>
+                <span class="row-code">&nbsp;&nbsp;encryptionStandard: <span class="token-str">"AES-256-GCM / Strict TLS 1.3"</span></span>
+              </div>
+              <div class="code-row">
+                <span class="row-num">08</span>
+                <span class="row-code">};</span>
+              </div>
+            </div>
+
+            <div class="redaction-status-banner">
+              <span class="status-indicator-dot"></span>
+              <span class="status-msg" id="redactionStatusMsg">AUTOMATIC REDACTION ACTIVE: 4 sensitive items masked</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- 7. PRICING IN ONE HAIRLINE-DIVIDED PANEL WITH PROJECT/MONTHLY SWITCH -->
+    <!-- ========================================================================= -->
+    <section id="pricing" class="section-pricing">
+      <div class="container">
+        
+        <div class="section-header-block">
+          <div class="chapter-badge">
+            <span class="chapter-dot"></span>
+            <span class="chapter-mono">[09:35:00 AM IST] // CHAPTER 06 — SCOPE, MODELS & QUOTATIONS</span>
+          </div>
+          <h2 class="section-title">Transparent, Scope-Driven Pricing</h2>
+          <p class="section-desc">
+            We do not publish arbitrary fixed prices because no two enterprise systems have the same requirements. 
+            Request a free project discussion and receive a customized quotation tailored precisely to your scope.
+          </p>
+
+          <!-- The Monthly/Yearly or Milestone/Sprint Switch -->
+          <div class="pricing-switch-container">
+            <div class="pricing-toggle-pill">
+              <button type="button" class="toggle-btn active" id="btnScopeProject" data-mode="project">
+                Fixed-Scope Project Sprints
+              </button>
+              <button type="button" class="toggle-btn" id="btnScopeRetainer" data-mode="retainer">
+                Dedicated Engineering Retainer
+              </button>
+            </div>
+            <span class="switch-note">No hidden fees · Transparent milestone deliverables</span>
+          </div>
+        </div>
+
+        <!-- Hairline-Divided Panel -->
+        <div class="hairline-pricing-panel">
+          
+          <!-- Column 1: Starter MVP -->
+          <div class="pricing-hairline-col">
+            <div class="plan-top-head">
+              <span class="plan-tag">TIER 01</span>
+              <h3 class="plan-name">Production MVP Sprint</h3>
+              <p class="plan-summary">For startups and brands launching a new product, custom web application, or focused mobile app.</p>
+            </div>
+
+            <div class="plan-price-box">
+              <div class="price-quote-badge">[CUSTOM QUOTE: REQUEST TAILORED ESTIMATE]</div>
+              <span class="price-subtext" id="priceSubtext1">Milestone-based delivery · Typically 3 to 6 weeks</span>
+            </div>
+
+            <div class="plan-features-list">
+              <div class="plan-feat-item"><span>✔</span> Custom responsive UI/UX & frontend</div>
+              <div class="plan-feat-item"><span>✔</span> Secure authentication & user roles</div>
+              <div class="plan-feat-item"><span>✔</span> Database architecture & REST API</div>
+              <div class="plan-feat-item"><span>✔</span> Payment gateway setup (Stripe/Razorpay)</div>
+              <div class="plan-feat-item"><span>✔</span> Cloud deployment & SSL configuration</div>
+              <div class="plan-feat-item"><span>✔</span> 100% source code ownership</div>
+            </div>
+
+            <div class="plan-cta-box">
+              <a href="#contact" class="btn-plan-select">Request MVP Scope Discussion →</a>
+            </div>
+          </div>
+
+          <!-- Column 2: Growth Platform (Featured) -->
+          <div class="pricing-hairline-col featured-col">
+            <div class="featured-badge">MOST POPULAR FOR SCALING TEAMS</div>
+            <div class="plan-top-head">
+              <span class="plan-tag text-mint">TIER 02</span>
+              <h3 class="plan-name">Full-Scale SaaS & Automation</h3>
+              <p class="plan-summary">For established businesses expanding to custom SaaS, multi-tenant e-commerce, AI agents, or cross-platform apps.</p>
+            </div>
+
+            <div class="plan-price-box">
+              <div class="price-quote-badge highlight-mint">[CUSTOM QUOTE: REQUEST TAILORED ESTIMATE]</div>
+              <span class="price-subtext" id="priceSubtext2">Staged sprint milestones · Typically 6 to 12 weeks</span>
+            </div>
+
+            <div class="plan-features-list">
+              <div class="plan-feat-item"><span>✔</span> Everything in Tier 01 plus:</div>
+              <div class="plan-feat-item"><span>✔</span> Advanced admin portals & real-time analytics</div>
+              <div class="plan-feat-item"><span>✔</span> Cross-platform iOS & Android mobile apps</div>
+              <div class="plan-feat-item"><span>✔</span> Custom AI chatbot / autonomous agent integration</div>
+              <div class="plan-feat-item"><span>✔</span> Multi-currency payments, invoices & billing engine</div>
+              <div class="plan-feat-item"><span>✔</span> High-concurrency database indexing & Redis caching</div>
+              <div class="plan-feat-item"><span>✔</span> Automated CI/CD pipelines & staging environments</div>
+            </div>
+
+            <div class="plan-cta-box">
+              <a href="#contact" class="btn-plan-select btn-featured">Request Growth Platform Scope →</a>
+            </div>
+          </div>
+
+          <!-- Column 3: Enterprise Platform -->
+          <div class="pricing-hairline-col">
+            <div class="plan-top-head">
+              <span class="plan-tag">TIER 03</span>
+              <h3 class="plan-name">Enterprise Custom Architecture</h3>
+              <p class="plan-summary">For large organizations requiring bespoke infrastructure, deep ERP integrations, dedicated security, and SLA support.</p>
+            </div>
+
+            <div class="plan-price-box">
+              <div class="price-quote-badge">[CUSTOM QUOTE: REQUEST TAILORED ESTIMATE]</div>
+              <span class="price-subtext" id="priceSubtext3">Dedicated pods or long-term engineering retainer</span>
+            </div>
+
+            <div class="plan-features-list">
+              <div class="plan-feat-item"><span>✔</span> Everything in Tier 02 plus:</div>
+              <div class="plan-feat-item"><span>✔</span> Bespoke ERP, CRM & legacy system integrations</div>
+              <div class="plan-feat-item"><span>✔</span> Multi-region cloud clusters with automatic failover</div>
+              <div class="plan-feat-item"><span>✔</span> Custom enterprise AI models & fine-tuned agents</div>
+              <div class="plan-feat-item"><span>✔</span> Strict SLA uptime guarantees (99.98%+)</div>
+              <div class="plan-feat-item"><span>✔</span> Dedicated tech lead, QA engineers & 24/7 care</div>
+            </div>
+
+            <div class="plan-cta-box">
+              <a href="#contact" class="btn-plan-select">Request Enterprise Consultation →</a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Interactive Quick Scope Estimator -->
+        <div class="quick-scope-calculator">
+          <div class="calc-header">
+            <span class="calc-badge">INTERACTIVE SCOPE ESTIMATOR</span>
+            <h4 class="calc-title">Configure Your Desired Deliverables</h4>
+            <p class="calc-sub">Select the core capabilities you need to generate an instant scope brief for your project discussion:</p>
+          </div>
+
+          <div class="calc-toggles-grid" id="calcTogglesGrid">
+            <label class="calc-pill active">
+              <input type="checkbox" name="scope_web" checked data-name="Custom Web Application">
+              <span class="pill-check">✔</span> Custom Web Application
+            </label>
+            <label class="calc-pill active">
+              <input type="checkbox" name="scope_admin" checked data-name="Admin Dashboard & Database">
+              <span class="pill-check">✔</span> Admin Dashboard & Database
+            </label>
+            <label class="calc-pill active">
+              <input type="checkbox" name="scope_pay" checked data-name="Payment Gateway Integration">
+              <span class="pill-check">✔</span> Payment Gateway (Stripe/Razorpay)
+            </label>
+            <label class="calc-pill">
+              <input type="checkbox" name="scope_mobile" data-name="Mobile Apps (iOS & Android)">
+              <span class="pill-check">○</span> Mobile Apps (iOS & Android)
+            </label>
+            <label class="calc-pill">
+              <input type="checkbox" name="scope_ai" data-name="Custom AI Chatbot & Agent">
+              <span class="pill-check">○</span> Custom AI Chatbot / Agent
+            </label>
+            <label class="calc-pill">
+              <input type="checkbox" name="scope_automation" data-name="Business Automation Pipelines">
+              <span class="pill-check">○</span> Business Automation Pipelines
+            </label>
+          </div>
+
+          <div class="calc-output-bar">
+            <div class="output-left">
+              <span class="out-label">ESTIMATED ARCHITECTURE SPRINT:</span>
+              <span class="out-val" id="calcSprintEstimate">3 to 5 Weeks (Core Architecture + Pay + Admin)</span>
+            </div>
+            <a href="#contact" class="btn-calc-forward" id="btnForwardScope">
+              Lock Scope into Project Inquiry →
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- 8. QUESTIONS (FREQUENTLY ASKED QUESTIONS ACCORDION) -->
+    <!-- ========================================================================= -->
+    <section id="faq" class="section-faq">
+      <div class="container">
+        
+        <div class="section-header-block">
+          <div class="chapter-badge">
+            <span class="chapter-dot"></span>
+            <span class="chapter-mono">[09:42:00 AM IST] // CHAPTER 07 — CLIENT QUESTIONS & PROCEDURES</span>
+          </div>
+          <h2 class="section-title">Frequently Addressed Questions</h2>
+          <p class="section-desc">
+            Direct answers on intellectual property, engagement models, timelines, communication protocols, and support.
+          </p>
+        </div>
+
+        <div class="faq-accordion-list" id="faqAccordion">
+          
+          <!-- Q1 -->
+          <div class="faq-item active">
+            <button type="button" class="faq-question-btn" aria-expanded="true">
+              <span class="faq-q-text">How do custom project quotations work without fixed pricing?</span>
+              <span class="faq-icon">−</span>
+            </button>
+            <div class="faq-answer-panel">
+              <p>
+                Every project begins with a free initial discussion where we understand your technical requirements, desired features, integration points, and delivery timeline. We then provide a comprehensive, transparent written quotation broken down into clear milestones with exact deliverable scopes. You only pay for what you need—no inflated blanket costs or mystery line items.
+              </p>
+            </div>
+          </div>
+
+          <!-- Q2 -->
+          <div class="faq-item">
+            <button type="button" class="faq-question-btn" aria-expanded="false">
+              <span class="faq-q-text">Who owns the intellectual property and code written by Roventis?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer-panel">
+              <p>
+                You retain 100% full ownership of all source code, designs, architecture diagrams, and deployment keys upon milestone payment. We provide clean Git repositories with comprehensive documentation. We never claim equity or recurring royalties on custom-built client software.
+              </p>
+            </div>
+          </div>
+
+          <!-- Q3 -->
+          <div class="faq-item">
+            <button type="button" class="faq-question-btn" aria-expanded="false">
+              <span class="faq-q-text">Where is Roventis Technologies based, and how do you collaborate globally?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer-panel">
+              <p>
+                Roventis Technologies is incorporated and engineered in India, serving ambitious clients across India, North America, Europe, the Middle East, and Southeast Asia. We maintain structured asynchronous updates, shared Slack/Discord channels, live staging previews, and overlapping working hours for synchronous design and architecture reviews.
+              </p>
+            </div>
+          </div>
+
+          <!-- Q4 -->
+          <div class="faq-item">
+            <button type="button" class="faq-question-btn" aria-expanded="false">
+              <span class="faq-q-text">Can you integrate with our existing databases, payment gateways, and APIs?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer-panel">
+              <p>
+                Yes. Whether you are running on PostgreSQL, MongoDB, Redis, Stripe, Razorpay, AWS, or custom on-premise legacy systems, our engineers specialize in seamless API development, database normalization, webhook hardening, and zero-downtime data migration.
+              </p>
+            </div>
+          </div>
+
+          <!-- Q5 -->
+          <div class="faq-item">
+            <button type="button" class="faq-question-btn" aria-expanded="false">
+              <span class="faq-q-text">What happens after the software is deployed live?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer-panel">
+              <p>
+                We stand firmly behind everything we build. All projects include an initial post-launch warranty period for bug fixes and optimization. Following that, we offer flexible ongoing maintenance retainers, automated 24/7 telemetry monitoring, and sprint-based feature expansions.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- 9. CONTACT / START A PROJECT SECTION -->
+    <!-- ========================================================================= -->
+    <section id="contact" class="section-contact">
+      <div class="container">
+        
+        <div class="contact-frame-card">
+          <div class="contact-split-grid">
+            
+            <!-- Left Info -->
+            <div class="contact-left-col">
+              <div class="chapter-badge">
+                <span class="chapter-dot"></span>
+                <span class="chapter-mono">[09:50:00 AM IST] // CHAPTER 08 — COMMENCE PROJECT</span>
+              </div>
+              <h2 class="contact-headline">Initiate Your Project Discussion</h2>
+              <p class="contact-lead">
+                Tell us what you are looking to build. Our principal engineers will review your requirements and schedule a focused technical discussion within 24 hours.
+              </p>
+
+              <div class="direct-reach-list">
+                <div class="reach-item">
+                  <span class="reach-icon">✉️</span>
+                  <div class="reach-info">
+                    <span class="reach-label">DIRECT EMAIL:</span>
+                    <a href="mailto:roventistechnologies@gmail.com" class="reach-link">roventistechnologies@gmail.com</a>
+                  </div>
+                </div>
+
+                <div class="reach-item">
+                  <span class="reach-icon">📍</span>
+                  <div class="reach-info">
+                    <span class="reach-label">ENGINEERING LOCATION:</span>
+                    <span class="reach-val">India · Worldwide Remote Delivery</span>
+                  </div>
+                </div>
+
+                <div class="reach-item">
+                  <span class="reach-icon">⏱️</span>
+                  <div class="reach-info">
+                    <span class="reach-label">RESPONSE GUARANTEE:</span>
+                    <span class="reach-val">&lt; 24 business hours with initial architectural notes</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="nda-assurance-box">
+                <span class="lock-glyph">🔒</span>
+                <span>All project inquiries are automatically held under strict bilateral confidentiality.</span>
+              </div>
+            </div>
+
+            <!-- Right Interactive Form -->
+            <div class="contact-right-col">
+              <form id="projectInquiryForm" class="inquiry-form" novalidate>
+                
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="contactName" class="form-label">YOUR FULL NAME *</label>
+                    <input type="text" id="contactName" name="contactName" class="form-input" placeholder="e.g. Rahul Sharma / Alex Chen" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="contactEmail" class="form-label">BUSINESS EMAIL *</label>
+                    <input type="email" id="contactEmail" name="contactEmail" class="form-input" placeholder="name@company.com" required>
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="contactCompany" class="form-label">COMPANY / STARTUP NAME</label>
+                    <input type="text" id="contactCompany" name="contactCompany" class="form-input" placeholder="Organization name">
+                  </div>
+                  <div class="form-group">
+                    <label for="projectType" class="form-label">PROJECT SCOPE DOMAIN *</label>
+                    <select id="projectType" name="projectType" class="form-select" required>
+                      <option value="custom-web">Custom Web Application / SaaS</option>
+                      <option value="mobile-app">Mobile Apps (Android & iOS)</option>
+                      <option value="ecommerce">E-Commerce & Payment System</option>
+                      <option value="ai-agent">Custom AI Chatbot & Automation</option>
+                      <option value="enterprise">Enterprise Custom Architecture</option>
+                      <option value="other">Other Software Development</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="projectDetails" class="form-label">PROJECT DESCRIPTION & REQUIREMENTS *</label>
+                  <textarea id="projectDetails" name="projectDetails" class="form-textarea" rows="4" placeholder="Briefly describe what you want to build, existing systems you need integrated, target launch dates, or technical preferences..." required></textarea>
+                </div>
+
+                <div class="form-submit-row">
+                  <button type="submit" class="btn-submit-project" id="btnSubmitProject">
+                    <span class="btn-spin-icon" hidden>⟳</span>
+                    <span class="btn-submit-label">Send Project Inquiry →</span>
+                  </button>
+                  <span class="form-note">Free initial discussion · Custom quote provided</span>
+                </div>
+
+              </form>
+
+              <!-- Success Modal / Confirmation Card -->
+              <div class="form-success-card" id="formSuccessCard" hidden>
+                <div class="success-icon-wrap">✔</div>
+                <h3 class="success-title">Project Inquiry Received</h3>
+                <p class="success-text">
+                  Thank you, <span id="successName">Valued Client</span>. Your project brief has been routed to our senior engineering desk. We will review your requirements and reach out at <span id="successEmail">your email</span> within 24 hours.
+                </p>
+                <div class="success-meta-box" id="successMetaSummary"></div>
+                <button type="button" class="btn-dismiss-success" id="btnDismissSuccess">Submit Another Inquiry</button>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- 10. HUGE CLOSING LINE -->
+    <!-- ========================================================================= -->
+    <section class="section-huge-closing">
+      <div class="container">
+        <div class="huge-closing-wrap">
+          <p class="huge-closing-text">
+            “EVERY GREAT SYSTEM BEGINS AS A CONVERSATION.”
+          </p>
+          <div class="closing-sub">
+            LET’S ARCHITECT YOURS TOGETHER.
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================================= -->
+  <!-- 11. FOOTER: NAME SPANNING THE FOOTER -->
+  <!-- ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      
+      <div class="footer-top-columns">
+        
+        <div class="footer-col-main">
+          <div class="footer-brand-title">ROVENTIS TECHNOLOGIES</div>
+          <p class="footer-desc">
+            A technology company based in India, designing and developing custom web applications, e-commerce, mobile applications, AI solutions, and autonomous business workflows.
+          </p>
+          <div class="footer-meta-badges">
+            <span class="meta-pill">HQ: India</span>
+            <span class="meta-pill">Global Remote Delivery</span>
+            <span class="meta-pill">Zero-Lockin IP</span>
+          </div>
+        </div>
+
+        <div class="footer-col-links">
+          <div class="footer-col-head">Core Capabilities</div>
+          <ul class="footer-link-list">
+            <li><a href="#hero">Custom Website Development</a></li>
+            <li><a href="#app-grid">Responsive UI/UX Design</a></li>
+            <li><a href="#app-grid">E-Commerce & Payment Gateways</a></li>
+            <li><a href="#process">Mobile Apps (Android & iOS)</a></li>
+            <li><a href="#process">AI Chatbots & Agents</a></li>
+            <li><a href="#integrations">Business Automation Systems</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col-links">
+          <div class="footer-col-head">Navigation</div>
+          <ul class="footer-link-list">
+            <li><a href="#hero">Meeting Agenda</a></li>
+            <li><a href="#app-grid">Live Application Engine</a></li>
+            <li><a href="#process">Engineering Lifecycle</a></li>
+            <li><a href="#proof">Verified Telemetry & Proof</a></li>
+            <li><a href="#security">Zero-Trust Security</a></li>
+            <li><a href="#pricing">Scope & Pricing Models</a></li>
+            <li><a href="#faq">Frequently Asked Questions</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col-contact">
+          <div class="footer-col-head">Direct Desk</div>
+          <p class="foot-contact-line">Email: <a href="mailto:roventistechnologies@gmail.com" class="foot-email">roventistechnologies@gmail.com</a></p>
+          <p class="foot-contact-line">Inquiries: <a href="#contact">Contact Us / Start a Project Form</a></p>
+          <p class="foot-contact-line">Quotations: Custom project-based proposals</p>
+          <p class="foot-contact-line">Location: India</p>
+        </div>
+
+      </div>
+
+      <!-- Hairline divider -->
+      <div class="footer-hairline"></div>
+
+      <!-- Giant Monolithic Brand Name Spanning the Footer -->
+      <div class="giant-footer-name-stage" aria-label="ROVENTIS TECHNOLOGIES">
+        <div class="giant-footer-name">ROVENTIS TECHNOLOGIES</div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div class="footer-copyright">
+          © <span id="footerYear">2026</span> ROVENTIS TECHNOLOGIES. All rights reserved.
+        </div>
+        <div class="footer-palette-indicators">
+          <span class="palette-swatch night" title="Night #0B0D10"></span>
+          <span class="palette-swatch panel" title="Panel #14181D"></span>
+          <span class="palette-swatch cobalt" title="Cobalt #1754EE"></span>
+          <span class="palette-swatch mint" title="Mint #6EF2C6"></span>
+          <span class="palette-swatch violet" title="Violet #9C8CFF"></span>
+          <span class="palette-swatch white" title="Soft White #E8ECEF"></span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
